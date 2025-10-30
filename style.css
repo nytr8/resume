@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: coolvetica;
+    src: url(/fonts/Coolvetica\ Rg.otf);
+}
+
+#header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+#about {
+    text-align: center;
+
+}
+
+#education {
+    height: 100px;
+    text-align: center;
+    background-color: aqua;
+}
+
+#skills {
+    height: 100px;
+    text-align: center;
+    background-color: rgb(242, 255, 198);
+}
+
+#projects {
+    background-color: aquamarine;
+    height: 100px;
+    text-align: center;
+}
+
+.boxes {
+    background-color: white;
+    margin: 10px;
+}
+
+
+.headings {
+    text-transform: uppercase;
+    font-family: coolvetica;
+    font-weight: 100;
+}
