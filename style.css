@@ -1,60 +1,176 @@
 * {
     margin: 0;
-
     padding: 0;
     box-sizing: border-box;
 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: Syne;
+    src: url(fonts/Syne-Extra.ttf);
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
-}
 
-@font-face {
-    font-family: coolvetica;
-    src: url(/fonts/Coolvetica\ Rg.otf);
-}
-
-#header {
-    background-color: blue;
-    color: white;
-    text-align: center;
-    height: 200px;
-}
-
-#about {
-    text-align: center;
-
-}
-
-#education {
-    height: 100px;
-    text-align: center;
-    background-color: aqua;
-}
-
-#skills {
-    height: 100px;
-    text-align: center;
-    background-color: rgb(242, 255, 198);
-}
-
-#projects {
-    background-color: aquamarine;
-    height: 100px;
-    text-align: center;
-}
-
-.boxes {
-    background-color: white;
-    margin: 10px;
-}
-
-
-.headings {
-    text-transform: uppercase;
-    font-family: coolvetica;
     font-weight: 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    position: relative;
+    background: #18192D;
+    overflow-x: hidden;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/78/4k_Dissolve_Noise_Texture.png");
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.1;
+    pointer-events: none;
+    mix-blend-mode: soft-light;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle 800px at top right, #2D6C8F, #18192D);
+    overflow-x: hidden;
+}
+
+#landing {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+    position: relative;
+    z-index: 1;
+
+}
+
+#landing #left {
+    color: white;
+    width: 70%;
+}
+
+#landing #left .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 1.5;
+}
+
+.text h1 {
+    margin-bottom: 30px;
+}
+
+#landing #left .text p {
+    width: 550px;
+    margin-left: 200px;
+}
+
+.contact div {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 50px 50px;
+
+}
+
+.contact div p {
+
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact div p i {
+    font-size: 1.5rem;
+    color: #795FCD;
+}
+
+#landing #left .contact div p,
+#landing #left .contact h2 {
+    margin-left: 200px;
+}
+
+
+
+
+#landing #left .contact h2 {
+    margin-top: 50px;
+    font-family: Syne;
+    font-size: 2rem;
+    padding: 8px 20px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.113)) 1;
+    width: fit-content;
+    background: linear-gradient(to right, #795FCD, rgba(255, 255, 255, 0.113));
+}
+
+
+#landing #left .text h1 {
+    width: fit-content;
+    font-family: Syne;
+    font-size: 5rem;
+    background: linear-gradient(to right, #795FCD, rgba(255, 255, 255, 0.113));
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+#landing #right {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+#right .imgWrap {
+    position: absolute;
+    width: 90%;
+    height: 550px;
+    border: 2px solid #795FCD;
+    border-radius: 30%;
+    transform: translate(-30%, -45%);
+}
+
+#right img {
+    width: 90%;
+    border-radius: 30%;
+    position: absolute;
+    transform: translate(-40%, -55%);
+}
+
+.glow {
+    border: 3px solid #ffffff5d;
+    border-radius: 30%;
+    box-shadow: 0 0 15px #ffffff57,
+        0 0 30px #ffffff63;
+}
+
+#landing .shape {
+    rotate: 45deg;
+    position: absolute;
+    z-index: 2;
+    top: -5%;
+    left: 30%;
 }
